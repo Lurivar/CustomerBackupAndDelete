@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module xmlns="http://thelia.net/schema/dic/module"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://thelia.net/schema/dic/module http://thelia.net/schema/dic/module/module-2_2.xsd">
+    <fullnamespace>CustomerBackupAndDelete\CustomerBackupAndDelete</fullnamespace>
+    <descriptive locale="en_US">
+        <title>Customer : backup and delete</title>
+        <description>Adds a button to transfer a customer's order to a new fake one, which allows the former to be deleted.</description>
+    </descriptive>
+    <descriptive locale="fr_FR">
+        <title>Client : Backup et suppression</title>
+        <description>Ajoute un bouton pour transférer les commandes d'un client à un autre faux et généré automatiquement pour permettre la suppression du premier</description>
+    </descriptive>
+    <languages>
+        <language>en_US</language>
+        <language>fr_FR</language>
+    </languages>
+    <version>1.0.0</version>
+    <authors>
+        <author>
+            <name>Luc Normandon</name>
+            <email>lucnormandon@openstudio.fr</email>
+        </author>
+    </authors>
+    <type>classic</type>
+
+    <thelia>2.2.0</thelia>
+    <stability>other</stability>
+    <mandatory>0</mandatory>
+    <hidden>0</hidden>
+</module>

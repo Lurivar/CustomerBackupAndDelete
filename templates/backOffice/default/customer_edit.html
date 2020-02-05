@@ -1,0 +1,32 @@
+<style>
+
+    .modal-lg {
+        width: 900px;
+    }
+    .decal{
+        float : left;
+    }
+</style>
+{loop type="customer" name="isBackupCustomer" current="false" id=$customer_id}
+{if $REF != "BACKUPORDERS"}
+<div class="row">
+    <div class="col-md-12 general-block-decorator">
+        <div class="row">
+            <div class="col-md-12 title title-without-tabs">
+                {intl l="Transfer all orders from this customer into the fake customer 'BACKUPORDERS'"}
+            </div>
+        </div>
+        <a href="{url path="/admin/module/customer-backup/$ID"}">
+        <button type="button" class="btn btn-default btn-primary btn-sm decal" >
+            <span class="glyphicon glyphicon-hdd"></span>
+            {intl l="Transfer customer's orders"}
+        </button>
+        </a>
+
+    </div>
+</div>
+{/if}
+{/loop}
+
+
+
